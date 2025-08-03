@@ -19,7 +19,6 @@ body.dark-mode{
         box-shadow: none;
         border: 1px solid gray;
         filter: blur();
-        /* background-color: transparent; */
     }
     .btn-div{
         background-color: rgb(29, 28, 28);
@@ -52,7 +51,6 @@ body.dark-mode{
         border-top: 1px solid gray;
     }
 }
-
 .container{
     width: min(90%, 1200px);
 }
@@ -67,15 +65,11 @@ body.dark-mode{
     position: fixed;
     z-index: 2;
     top: 0;
-    left: 0;
-    
+    left: 0;   
 }
-
 .btn-div a.active {
     background-color: aquamarine;
   }
-
-  
 .fixed-head p{
     margin-top: -15px;
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
@@ -91,7 +85,6 @@ body.dark-mode{
     padding-right: 2rem;
     gap: 20px;
     cursor: pointer;
-   
 }
 .icon{
     margin-right: 5px;
@@ -158,13 +151,11 @@ body.dark-mode{
     padding: 1.5rem;
     background: linear-gradient(to right, rgb(229, 243, 240), rgb(221, 233, 245));
     border-radius: 20px;
-    font-size: 17px;
-   
+    font-size: 17px;  
 }
 .tips-to-encode h3{
     font-size:23px;
 }
-
 .img-selection{
     width: min(90%, 1200px);
     border: 2px solid lightgrey;
@@ -174,7 +165,6 @@ body.dark-mode{
     font-size: 17px;
     margin-top: 35px;
     background-color: rgb(247, 243, 243);
-
 }
 .upload-img{
     border: 2px dashed lightgray;
@@ -190,8 +180,6 @@ body.dark-mode{
     text-align: center;
     width: min(50%, 1200px);
     margin:auto ;
-    
-
 }
 .secret-message{
     width: min(90%, 1200px);
@@ -253,7 +241,6 @@ input[type="checkbox"]:checked + #switch{
 input[type="checkbox"]{
     display: none;
 }
-
 #characters{
     display: flex;
     margin-left: auto;
@@ -267,8 +254,6 @@ input[type="checkbox"]{
     margin-left: 3rem;
     padding: 1rem;
     margin-top: 35px;
-    
-    
 }
 .encode-btn{
     width: min(85%, 1200px); /*  need to apply media query  70%*/
@@ -278,8 +263,6 @@ input[type="checkbox"]{
     border: none;
     color: white;
     font-size: clamp(1rem, 1.1vw, 3rem);
-    
-
 }
 .reset-btn{
     padding: 1rem 2rem;
@@ -287,14 +270,12 @@ input[type="checkbox"]{
     border: 1px solid gray;
     font-size: clamp(1rem, 1.1vw, 3rem);
 }
-
 footer{
     display: flex;
     justify-content: center;position: relative;
     top: 10rem;
     border-top: 2px solid lightgray;
     padding: 2rem;
-
 }
 .what-is-steganography{
     width: min(90%, 1200px);
@@ -326,10 +307,8 @@ footer{
     padding: 0.2rem;  
     margin-bottom: 15px;
 }
-
 .flex-list{
-    display: flex;
-    
+    display: flex;   
 }
 .lists ol{
     list-style: none;
@@ -344,16 +323,13 @@ footer{
     font-size: 17px;
     margin-bottom: 15px;
 }
-
 @media (max-width: 1000px) {
     input{
         width: min(70%, 1200px);
     }
     .encode-btn{
         width: min(70%, 1200px);
-    }
-
-    
+    } 
 }
 @media screen and (max-width: 768px) {
   .enterPassword {
@@ -395,19 +371,10 @@ footer{
         margin-left: -0.8rem;
     }
 }
-/* @media (min-width:1000px) {
-    .encode-btn{
-        max-width: 50vw;
-    } */
-
-    
-/* } */
 @media (max-width:1200px) {
     .encode-btn{
         max-width: 70vw;
     }
-
-    
 }
 .hide{
     display: none;
