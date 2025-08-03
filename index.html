@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Image Steganography</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="fixed-head">
+                <div class="icon"><i class="fa-solid fa-shield-halved" style="font-size: 30px;"></i>
+
+                </div>
+                <div class="title">
+                    <h1>Advanced Image Steganography</h1>
+                    <p>Conceal. Encrypt. Reveal.</p>
+                </div>
+                <div class="top-right">
+                    <div class="mode"><abbr title="Change theme"><i class="fa-regular fa-moon" onclick="changeTheme()"></i></abbr></div>
+                    <div class="github"><abbr title="View on GitHub"><a href="https://github.com/mishwani7/Advanced-Image-Steganography" style="color: black;"><i class="fa-brands fa-github"></i></a></abbr></div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="main">
+            <section>
+            <div class="btn-div">
+                <a  href="index.html" class="encode" >Encode</a>
+                <a href="decode.html" class="decode">Decode</a>
+                <a href="about.html" class="about">About</a>
+            </div>
+
+        </section>
+        <section>
+            <div class="tips-to-encode">
+                <h3><i class="fa-solid fa-lock" style="color: #63E6BE;"></i>
+                    How to Encode Secret Messages</h3>
+                   <div class="lists">
+                     <ol>
+                       <div> <li><b>Choose Your Image:</b></li>
+                        <p>Upload PNG, JPG, JPEG, BMP, or GIF. Larger images = more capacity!</p>
+                        <li><b>Write Your Secret:</b></li>
+                        <p>Type any message - text, passwords, or data</p></div>
+                        </ol>
+                        <ol start="3">
+                        <div><li><b>Add Security:</b></li>
+                        <p>Toggle encryption ON and set a strong password</p>
+                        <li><b>Generate & Download:</b></li>
+                        <p>Get a visually identical image with your hidden message</p>
+                        </div>
+                    </ol>
+                   </div>
+                   <div class="extra-tip">
+                    <i class="fa-solid fa-lightbulb fa-lg" style="color: #FFD43B; margin-top: 15px; padding: 10px;"></i>
+                    <p>Tip: The output image looks exactly the same but secretly contains your data!</p>
+                   </div>
+            </div>
+        </section>
+        <section>
+            <div class="img-selection">
+                <h3><i class="fa-regular fa-eye" style="color: #63E6BE; padding: 10px;"></i>Select Image</h3>
+                <p>Choose an image to hide your secret message in</p>
+                <div class="upload-img">
+                    <div class="selection-inner-text"><div class="img-icon"><i class="fa-regular fa-image fa-2xl" style="color: #9b9b9d;"></i></div>
+                    <h3>Upload an image</h3>
+                   <p> Drag and drop an image file, or click to browse</p>
+                    <span style="font-size: 12px;">Supports PNG, JPG, JPEG, BMP, GIF (max 50MB)</span></div>                
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="secret-message">
+                <h3>Secret Message</h3>
+                <p>Enter the text you want to hide in the image</p>
+
+                    <div class="msg-type-section">
+                    <textarea name="message" id="secretMessage" placeholder="Type your secret message here..." rows="8" cols="80"></textarea></div>
+
+                    <div class="encryption-section" onclick="showContent()">
+                    <input type="checkbox" id="toggle-switch">
+                    <label for="toggle-switch" id="switch" ></label>
+                    
+                    <span><i class="fa-solid fa-lock" style="color: #63E6BE; padding: 0 1rem;"></i></span>Enable Encryption
+                
+
+                        <p id="characters"><span id="value">0 </span>
+                            characters</p>
+                    </div>
+                    <div class="enterPassword" id="encryption">
+                <input type="password" placeholder="Enter encryption password"><br>
+                <span style="font-size: 12px;position: relative; top: 10px; color: gray;">This password will be required to decode the message</span>
+                </div>
+             </div>
+            </div>
+        </section>
+        <section>
+            <div class="encode-and-reset-btns">
+                <button type="submit" class="encode-btn">Encode</button>
+                <button type="reset" class="reset-btn">Reset</button>
+            </div>
+        </section>
+        <footer>
+            Built with 💙 for 🌍 by Abu Zar Mishwani
+        </footer>
+    </div>
+        </div>
+</body>
+</html>

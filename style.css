@@ -1,0 +1,411 @@
+body{
+    background-color: rgb(243, 243, 243);
+    background-image: linear-gradient(to right, rgb(228, 228, 228) 1px, transparent 1px),
+    linear-gradient(to top, rgb(231, 231, 231) 1px, transparent 1px);
+    background-size: 35px 35px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.main{
+    margin-top: 10rem;
+    width: min(100%, 1200px);
+}
+body.dark-mode{
+    background-color: black;
+    color: white;
+    background-image: none;
+    .fixed-head{
+        background-color: black;
+        color: white;
+        box-shadow: none;
+        border: 1px solid gray;
+        filter: blur();
+        /* background-color: transparent; */
+    }
+    .btn-div{
+        background-color: rgb(29, 28, 28);
+        color: white;
+        box-shadow: none;
+        border: 1px solid gray;
+    }
+    .tips-to-encode, .what-is-steganography, .technology-work, .human-eye, .double-protection, .pro-tip, .advanced-features{
+        background-color: rgb(29, 28, 28);
+        color: white;
+        box-shadow: none;
+        border: 1px solid gray;
+        background: none;
+    }
+    .extra-tip, .img-selection, .secret-message, input, .reset-btn{
+        background-color: rgb(43, 42, 42);
+        color: white;
+        border: 1px solid gray;
+    }
+    .encode-btn{
+        background-color: rgb(63, 63, 189);
+    }
+    .encode, .decode, .about{
+        color: white;
+    }
+    .encode:hover, .decode:hover, .about:hover{
+        color: black;
+    }
+    footer{
+        border-top: 1px solid gray;
+    }
+}
+
+.container{
+    width: min(90%, 1200px);
+}
+.fixed-head{
+    display: flex;
+    flex-direction: row;
+    font-size: clamp(1rem, 1.1vw, 3rem);
+    background-color: white;
+    width: 100vw;
+    gap: 1rem;
+    box-shadow: 2px 2px 5px lightgray, -2px -2px 5px lightgray ;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    
+}
+
+.btn-div a.active {
+    background-color: aquamarine;
+  }
+
+  
+.fixed-head p{
+    margin-top: -15px;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    letter-spacing: 1.5px;
+}
+.top-right, .icon{
+    display: flex;
+    margin-top: 2rem;
+    margin-left: 2.3rem;
+}
+.top-right{
+    margin-left: auto;
+    padding-right: 2rem;
+    gap: 20px;
+    cursor: pointer;
+   
+}
+.icon{
+    margin-right: 5px;
+    color:aquamarine;
+}
+.mode, .github{
+    font-size: 25px;
+
+}
+.btn-div{
+    width: min(45%, 1200px);
+    display: flex;
+    justify-content: center;
+    margin: 5rem auto;
+    background-color: white;
+    border-radius: 15px;
+    width: fit-content;
+    padding: 1rem;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(85, 83, 83);
+    box-shadow: 4px 4px 8px lightgray;
+    border: 1px lightgray;
+    margin-top: 45px;
+}
+.encode , .decode , .about {
+    padding: 0.5rem 2.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* =====hovering====== */
+.decode:hover, .about:hover, .encode:hover{
+    background-color: rgb(241, 241, 239);
+    transition: 0.5s;
+}
+.what-is-steganography:hover, .technology-work:hover, .advanced-features:hover, .tips-to-encode:hover, .img-selection:hover, .secret-message:hover{
+    box-shadow: 4px 2px 6px lightgray;
+    transition: 1s;
+}
+.reset-btn:hover{
+    box-shadow: 4px 2px 6px lightgray;
+    transition: 1s;
+    background-color: rgb(226, 224, 224);
+}
+.lists{
+    display: flex;
+}
+.extra-tip{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border: 1px solid lightgray;
+    background-color:aliceblue;
+    border-radius: 10px;
+}
+.tips-to-encode{
+    width: min(90%, 1200px);
+    border: 2px solid lightgrey;
+    margin-left: auto;
+    padding: 1.5rem;
+    background: linear-gradient(to right, rgb(229, 243, 240), rgb(221, 233, 245));
+    border-radius: 20px;
+    font-size: 17px;
+   
+}
+.tips-to-encode h3{
+    font-size:23px;
+}
+
+.img-selection{
+    width: min(90%, 1200px);
+    border: 2px solid lightgrey;
+    margin-left: auto;
+    padding: 1.5rem;
+    border-radius: 20px;
+    font-size: 17px;
+    margin-top: 35px;
+    background-color: rgb(247, 243, 243);
+
+}
+.upload-img{
+    border: 2px dashed lightgray;
+    padding: 3rem; 
+    border-radius: 10px;
+}
+.upload-img:hover{
+    background-color:aliceblue;
+    transition: 0.5s;
+    border-color:aquamarine;
+}
+.selection-inner-text{
+    text-align: center;
+    width: min(50%, 1200px);
+    margin:auto ;
+    
+
+}
+.secret-message{
+    width: min(90%, 1200px);
+    border: 2px solid lightgrey;
+    margin-left: auto;
+    padding: 1.5rem;
+    border-radius: 20px;
+    margin-top: 35px;
+    background-color: rgb(247, 243, 243);
+}
+textarea{
+    border-radius: 10px;
+    border: 2px solid lightgray;
+    padding: 1rem;
+    border-radius: 10px;
+    width: min(97%, 1200px);  /*need to apply media query  70% */
+    background-color: rgb(247, 243, 243);
+    min-height: 50px;
+    max-height: 80vh;
+}
+input{
+    border-radius: 5px;
+    border: 2px solid lightgray;
+    padding: 1rem;
+    border-radius: 10px;
+    width: min(97%, 1200px);
+    background-color: rgb(247, 243, 243);
+    margin-top: 20px;
+}
+.encryption-section{
+    display: flex;
+    margin-top: 1.6rem;
+}
+#switch{
+    position: relative;
+    display: inline-block;
+    width: 3rem;
+    height: 1.5rem;
+    background-color: rgb(221, 218, 218);
+    border-radius: 2rem;
+}
+#switch::after{
+    content: "";
+    position: absolute;
+    top: 0.03rem;
+    left: 0.1rem;
+    width: 1.36rem;
+    height: 1.36rem;
+    border-radius: 50%;
+    background-color: white;
+    transition:0.3s ;
+}
+input[type="checkbox"]:checked + #switch:after{
+    translate:1.5rem 0;
+}
+input[type="checkbox"]:checked + #switch{
+    background-color: aquamarine;
+}
+input[type="checkbox"]{
+    display: none;
+}
+
+#characters{
+    display: flex;
+    margin-left: auto;
+    margin-top: auto;
+}
+#value{
+    margin: 0 0.5rem;
+}
+.encode-and-reset-btns{
+    width: min(100%, 1200px);
+    margin-left: 3rem;
+    padding: 1rem;
+    margin-top: 35px;
+    
+    
+}
+.encode-btn{
+    width: min(85%, 1200px); /*  need to apply media query  70%*/
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: rgb(120, 120, 247);
+    border: none;
+    color: white;
+    font-size: clamp(1rem, 1.1vw, 3rem);
+    
+
+}
+.reset-btn{
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-size: clamp(1rem, 1.1vw, 3rem);
+}
+
+footer{
+    display: flex;
+    justify-content: center;position: relative;
+    top: 10rem;
+    border-top: 2px solid lightgray;
+    padding: 2rem;
+
+}
+.what-is-steganography{
+    width: min(90%, 1200px);
+    border: 2px solid lightgrey;
+    margin-left: auto;
+    margin-bottom: 15px;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+.technology-work{
+    width: min(90%, 1200px);
+    border: 2px solid lightgrey;
+    margin-left: auto;
+    margin-bottom: 15px;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 17px;
+}
+.human-eye, .double-protection, .pro-tip{
+    width: min(100%, 1200px);
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    background-color: rgb(207, 225, 241);
+    font-size:14px;
+    padding: 0.2rem;  
+    margin-bottom: 15px;
+}
+
+.flex-list{
+    display: flex;
+    
+}
+.lists ol{
+    list-style: none;
+}
+.advanced-features{
+    width: min(90%, 1200px);
+    border: 2px solid lightgrey;
+    margin-left: auto;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 1000px) {
+    input{
+        width: min(70%, 1200px);
+    }
+    .encode-btn{
+        width: min(70%, 1200px);
+    }
+
+    
+}
+@media screen and (max-width: 768px) {
+  .enterPassword {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
+  textarea{
+    margin-left: -10px;
+  }
+  .enterPassword input {
+    flex: 1 1 200px;
+    min-width: 150px;
+    padding:  1rem 5rem;
+    font-size: 1rem;
+  }
+  .enterPassword span{
+    margin-top: -1.3rem;
+  }
+   .encode-and-reset-btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+  }
+  .encode-btn,
+  .reset-btn {
+    flex: 1 1 7.5rem;
+    min-width: 6rem;
+    font-size: 1rem;
+    padding: 10px;
+    margin-right: 5rem;
+  }
+}
+@media (max-width:992px) {
+    textarea{
+        margin-left: -0.8rem;
+    }
+}
+/* @media (min-width:1000px) {
+    .encode-btn{
+        max-width: 50vw;
+    } */
+
+    
+/* } */
+@media (max-width:1200px) {
+    .encode-btn{
+        max-width: 70vw;
+    }
+
+    
+}

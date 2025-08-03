@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Image Steganography</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="fixed-head">
+                <div class="icon"><i class="fa-solid fa-shield-halved" style="font-size: 30px;"></i>
+
+                </div>
+                <div class="title">
+                    <h1>Advanced Image Steganography</h1>
+                    <p>Conceal. Encrypt. Reveal.</p>
+                </div>
+                <div class="top-right">
+                    <div class="mode"><i class="fa-regular fa-moon" onclick="changeTheme()"></i></div>
+                    <div class="github"><i class="fa-brands fa-github"></i></div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="main">
+            <section>
+            <div class="btn-div">
+                <a  href="index.html" class="encode" onclick="changeColor()">Encode</a>
+                <a href="decode.html" class="decode" onclick="changeColor()">Decode</a>
+                <a href="about.html" class="about" onclick="changeColor()">About</a>
+            </div>
+        </section>
+        <section>
+            <div class="tips-to-encode">
+                <h3><i class="fa-solid fa-lock-open fa-lg" style="color: #63E6BE;"></i>
+                    How to Decode Hidden Messages</h3>
+                   <div class="lists">
+                     <ol style="list-style: decimal;">
+                       <div> <li><b>Upload Image:</b></li>
+                        <p>Select an image that contains a secret message</p>
+                        <li><b>Extract Data:</b></li>
+                        <p>Click "Decode Message" to reveal hidden content</p></div>
+                        </ol>
+                        <ol start="3" style="list-style: decimal;">
+                        <div><li><b>Enter Password:</b></li>
+                        <p>If encrypted, you'll be prompted for the password</p>
+                        <li><b>Access Secret:</b></li>
+                        <p>Copy the revealed message or save it securely</p>
+                        </div>
+                    </ol>
+                   </div>
+                   <div class="extra-tip">
+                    <p><span style="font-size: 17px;">⚡</span>Fast: Decoding happens instantly - no server uploads required!</p>
+                   </div>
+            </div>
+        </section>
+        <section>
+            <div class="img-selection">
+                <h3><i class="fa-regular fa-eye" style="color: #63E6BE;"></i>Select Encoded Image</h3>
+                <p>Choose an image that contains a hidden message</p>
+                <div class="upload-img">
+                    <div class="selection-inner-text"><div class="img-icon"><i class="fa-regular fa-image fa-2xl" style="color: #9b9b9d;"></i></div>
+                    <h3>Upload an image</h3>
+                   <p> Drag and drop an image file, or click to browse</p>
+                    <span style="font-size: 12px;">Supports PNG, JPG, JPEG, BMP, GIF (max 50MB)</span></div>                
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="encode-and-reset-btns">
+                <button type="submit" class="encode-btn">Decode Message</button>
+                <button type="reset" class="reset-btn">Reset</button>
+            </div>
+        </section>
+        <footer>
+            Built with 💙 for 🌍 by Abu Zar Mishwani
+        </footer>
+    </div>
+        </div>
+</body>
+</html>
