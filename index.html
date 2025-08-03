@@ -25,15 +25,13 @@
                 </div>
             </div>
         </header>
-        
-        <div class="main">
+              <div class="main">
             <section>
             <div class="btn-div">
-                <a  href="index.html" class="encode" >Encode</a>
-                <a href="decode.html" class="decode">Decode</a>
-                <a href="about.html" class="about">About</a>
-            </div>
-
+  <a href="index.html" class="encode">Encode</a>
+  <a href="decode.html" class="decode">Decode</a>
+  <a href="about.html" class="about">About</a>
+</div>
         </section>
         <section>
             <div class="tips-to-encode">
@@ -78,7 +76,7 @@
                 <p>Enter the text you want to hide in the image</p>
 
                     <div class="msg-type-section">
-                    <textarea name="message" id="secretMessage" placeholder="Type your secret message here..." rows="8" cols="80"></textarea></div>
+                    <textarea name="message" id="secretMessage" placeholder="Type your secret message here..." rows="8" cols="80" onkeyup="countCharacters()"></textarea></div>
 
                     <div class="encryption-section" onclick="showContent()">
                     <input type="checkbox" id="toggle-switch">
